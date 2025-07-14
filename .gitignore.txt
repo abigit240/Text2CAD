@@ -1,0 +1,20 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# SolidWorks files you don't want in repo
+*.SLDPRT
+*.SLDASM
+*.SLDDRW
+
+# Virtual environments
+env/
+venv/
+
+# System files
+.DS_Store
+Thumbs.db
+
+# VSCode settings (optional)
+.vscode/

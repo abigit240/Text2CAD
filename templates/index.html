@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Text2CAD</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f1f5f9;
+        }
+
+        .header {
+            background-color: #ffffff;
+            padding: 30px;
+            text-align: center;
+            border-bottom: 1px solid #e5e7eb;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 32px;
+            color: #1d4ed8;
+        }
+
+        .header p {
+            margin: 6px 0 0;
+            font-size: 14px;
+            color: #6b7280;
+        }
+
+        .container {
+            max-width: 700px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 6px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        textarea {
+            width: 100%;
+            min-height: 120px;
+            padding: 10px;
+            font-size: 15px;
+            border: 1px solid #cbd5e1;
+            border-radius: 4px;
+            resize: vertical;
+        }
+
+        button {
+            background-color: #1d4ed8;
+            color: white;
+            padding: 10px 20px;
+            font-size: 15px;
+            border: none;
+            border-radius: 4px;
+            margin-top: 15px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #2563eb;
+        }
+
+        .output-section {
+            margin-top: 30px;
+        }
+
+        .output-section h3 {
+            margin-bottom: 8px;
+            font-size: 18px;
+            color: #111827;
+        }
+
+        pre {
+            background-color: #f3f4f6;
+            padding: 12px;
+            border-left: 4px solid #3b82f6;
+            overflow-x: auto;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 13px;
+            color: #6b7280;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1>Text2CAD</h1>
+        <p>(Prompt to build in SolidWorks)</p>
+    </div>
+
+    <div class="container">
+        <form method="POST">
+            <label for="prompt">Describe your part:</label>
+            <textarea name="prompt" id="prompt" required placeholder="e.g., Create a block with dimensions 100mm x 20mm x 20mm..."></textarea>
+            <button type="submit">Generate</button>
+        </form>
+
+        {% if output %}
+        <div class="output-section">
+            <h3> Model Response:</h3>
+            <pre>{{ output }}</pre>
+        </div>
+        {% endif %}
+
+        {% if cad_result %}
+        <div class="output-section">
+            <h3> CAD Generation Result:</h3>
+            <pre>{{ cad_result }}</pre>
+        </div>
+        {% endif %}
+    </div>
+
+    <div class="footer">
+        <p>Built by an engineer — not just another AI tool.</p>
+    </div>
+
+</body>
+</html>
