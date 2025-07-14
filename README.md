@@ -28,9 +28,8 @@ This is a prototype that enables users to generate CAD geometry in SolidWorks di
 
 | Interface | CAD Output |
 |----------|------------|
-| ![Interface](screenshots/interface.png) | ![CAD](screenshots/solidworks_output.png) |
+| ![Interface](screenshots/Text2CAD_interface.png) | ![CAD](screenshots/Text2CAD_CADmodel.png) |
 
-> Replace with actual images in `screenshots/` folder.
 
 ---
 
