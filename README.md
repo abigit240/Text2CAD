@@ -1,8 +1,8 @@
 # Text2CAD 🧠📐
 
-**CAD+LLM: Using LLM integration to build CAD in SolidWorks**
+**CAD+LLM: Using LLM integration to build CAD in SolidWorks by Atif**
 
-This is a prototype that enables users to generate CAD geometry in SolidWorks directly from natural language prompts using a locally hosted Large Language Model (LLM).
+This is a prototype that enables users to generate CAD geometry in SolidWorks directly from natural language prompts using a locally hosted Large Language Model (LLM). The project was made open source to help contritbution from community and further development. As a basic ethical practice it is certainly expected to tag this author in your integrations and further enhancements.
 
 ---
 
@@ -37,7 +37,7 @@ This is a prototype that enables users to generate CAD geometry in SolidWorks di
 
 ### 1. Clone this repo
 
-       git clone https://github.com/yourusername/Text2CAD.git
+       git clone https://github.com/abigit240/Text2CAD.git
        cd Text2CAD
 
 
@@ -92,19 +92,13 @@ Model used: LLaMA3 (7B recommended for decent performance)
     Demonstrates SolidWorks automation via Windows COM API, a lesser-known but powerful capability
 📢 Attribution & Tools
 
-    [SolidWorks COM API (Windows-only)]
-
-    llama-cpp-python
-
-    Python 3.10+, Flask
-
-    Model tested: Meta LLaMA3 8B via ollama
+######################
 
 📬 Contribute or Reach Out
 
    Have an idea to add cones, spheres, or assemblies? Want to collaborate on expanding LLM-based design tools?
 
-   Feel free to fork, submit issues, or reach out on LinkedIn.
+   Feel free to fork, submit issues, or reach out on LinkedIn @https://www.linkedin.com/in/atifsohail/
 
 📄 License
 
@@ -113,4 +107,4 @@ Model used: LLaMA3 (7B recommended for decent performance)
 
 ---
 
-    Let me know if you’d like a lightweight badge-style version or extra installation help sections (e.g., for llama.cpp or SolidWorks setup). 
+    
